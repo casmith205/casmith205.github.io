@@ -271,10 +271,12 @@ footer{
 
     .project-list-left{
         float: none;
+        margin-left: 20px;
     }
 
     .project-list-right{
         float: none;
+        margin-left:20px;
     }
 
     body{
