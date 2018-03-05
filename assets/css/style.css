@@ -289,6 +289,10 @@ footer{
         font-size: 25pt;
     }
 
+    .connect-box{
+        margin: auto;
+    }
+
 }
 
 /* For Screen sizes 768px and below */
