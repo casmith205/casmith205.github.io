@@ -1,9 +1,76 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>This is a website.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            CSmith Portfolio
+        </title>
+        <link  href="assets/css/reset.css" type="text/css" rel="stylesheet">
+        <link  href="assets/css/style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        What's up bootcamp instructors!
+        <header>
+            <div class="total-nav">
+                <h1 id="name">Carolyn Smith</h1>
+                    <ul id="links">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="#"> | </a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#"> | </a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </div>
+        </header>
+    <hr>
+        <div class="main-content-area">
+            <div class="main-box">
+                <h2>About Me<hr></h2>
+                    <img id="main-pic" src="assets/images/main.jpg">
+                    <p>Welcome! You've reached the portfolio website for Carolyn Smith (that's me!). If you were looking 
+                        for examples of my work, you're at the right place! If you have found this page by accident, 
+                        stay a while and check it out. I am a software development student working my way through a 
+                        12 week boot camp program at the University of Minnesota. 
+                    </p> 
+                    <p>My background is a little different than most Software Developers. I graduated in 2015 from <i>The</i> Ohio 
+                        State University with a Bachelor's degree in Accounting. Like many accountants fresh out of college,
+                        I started my career as an auditor at a Big Four firm. After learning the ropes of the business world, 
+                        I moved into a new role as Senior Financial Analyst as a local start-up, Bite Squad. 
+                    </p>
+                    <p>As time went on, I realized that it wasn't where I was working, but rather the work that was lacking. There 
+                        were certain aspects of finance, and more specifically, start-up culture, that I loved. I enjoyed solving 
+                        issues and creating spreadsheets that simplified other people's day-to-day activities. I wanted to be
+                        involved in all areas of the business. After working directly with the developers at Bite Squad, I 
+                        noticed a gap in their knowledge and the business world knowledge. It didn't take long for me to get 
+                        into coding as a hobby, and I soon realized that I could combine my skills into a career that I love.
+                    </p>
+                    <p>What you will see within this website is a culmination of the skills I have acquired over the course
+                    of the full-stack program.If you have any questions about what you have seen on this website, please
+                    see our <a href="contact.html"><b>contact</b></a> page to submit your inquiry!
+                    </p>
+            </div>
+            <div class="connect-box">
+                <h4>Connect with Me</h4>
+                <hr>
+                <!-- Github link -->
+                <a href="https://github.com/casmith205" target="_blank">
+                    <img id="social-logo" src="http://www.kurtpreston.com/assets/github-logo-73b52c4691ec3a4dcf860a9d7fa541ac6785469c5dcf0e212504df848016fa74.png">
+                </a>
+                <!-- LinkedIn link -->
+                <a href="https://www.linkedin.com/in/carolyn-smith-cpa-inactive-04919a99/" target="_blank">
+                    <img id="social-logo" src="http://www.vhtrucks.com/wp-content/uploads/2018/01/linkedin-logo.png">
+                </a>
+                <!-- Stackoverflow link -->
+                <a href="https://stackoverflow.com/users/9217305/carolyn-smith" target="_blank">
+                    <img id="social-logo" src="data:image/png;base64,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">
+                </a>
+            </div>
+        </div>
+        <footer>
+                <div class="copyright">Copyright &copy;</div>
+                <div class="bars"></div>
+        </footer>
     </body>
 </html>
+    
+    
+    

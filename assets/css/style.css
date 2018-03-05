@@ -1,0 +1,368 @@
+/* Headings of each page */
+h2{
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 0px 0px 20px;
+    margin: 0px 50px 0px 0px;
+    font-size:20pt;
+    font-weight: bold;
+}
+
+h4{
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+/* Line breaks underneath headings */
+hr{
+    margin: auto;
+    border: #dddddd thin solid;
+}
+
+/* Contact Us form */
+form{
+    padding: 20px;
+}
+
+form input{
+    width: 95%;
+    color: #777777;
+}
+
+/* Padding for the text paragraphs */
+p{
+    padding: 0px 20px 20px 20px;
+}
+
+/* Larger message box within form */
+#message{
+    height: 200px;
+    margin: auto;
+}
+
+/* Submit button on contact page */
+#button{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    margin: auto;
+    margin-top: 10px;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    animation-name: button-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* Animation of sumbmit button */
+@keyframes button-animation {
+    from {background-color:#4aaaa5;}
+    to {background-color: lightgreen;
+        color: lightslategrey;}
+}
+
+
+body{
+    background-image: url(../images/cheap_diagonal_fabric.png);
+    border-color: #dddddd;
+    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+/* Main content on each page */
+.main-content-area{
+    width:960px;
+    margin:0 auto;
+    line-height: 2;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+/* Main content */
+.main-box{
+    width: 65%;
+    float: left;
+    background-color: #ffffff;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-right: 30px;
+    padding-bottom: 50px;   
+}
+
+/* Social Media Icon Section */
+.connect-box{
+    width: 25%;
+    min-width: 220px;
+    float:right;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 0px 10px 0px 10px;
+    line-height: 2;
+    display: inline-block;
+    
+}
+
+/* Social Media Icon Pictures */
+#social-logo{
+    width: 50px;
+    margin: 10px;
+}
+
+/* About Me picture */
+#main-pic{
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+/* Formatting for the nav bar on the top of each page */
+header{
+    background-color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 80px;
+    display: inline-block;
+    border-bottom: #dddddd solid thick;
+}
+
+/* Formatingg for main content of nav bar */
+.total-nav{
+    width: 960px;
+    margin: auto;
+}
+
+/* Name on the top of each page */
+#name{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    display: inline-block;
+    margin: 0 auto;
+    line-height: 75px;
+    height: 75px;
+    position: relative;
+    top:-5px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* Nav bar links */
+#links{
+    list-style-type:none;
+    text-decoration-line: none;
+    line-height: 30px;
+    display: inline-block;
+    float: right;
+}
+
+#links a:hover{
+    background-color: lightgrey;
+}
+
+#links li {
+    display: inline-block;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: #777777;
+}
+
+/* Footer with green border and copyright */
+footer{
+    background-color: #666666;
+    color: #ffffff;
+    width: 100%;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    border-top: #4aaaa5 thick solid;
+    position: fixed;
+    bottom:0;
+}
+
+.copyright{
+    bottom:-20px;
+    position: relative;
+    font-size: 15px;
+}
+
+/* Text covering each picture on the portfolio page */
+.project-title{
+    background-color: #4aaaa5;
+    position: relative;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    top: 60px;
+    height: 50px;
+}
+
+/* Images used for placeholders */
+.placeholder{
+    width: 200px;
+    display: inline-block;
+    position: absolute;
+}
+
+/* Entire picture plus text that acts as a link */
+.link-box{
+    width: 200px;
+    margin: auto;
+    position: relative;
+    padding: 20px 20px 20px 0px;
+}
+
+/* Entire area that wraps the list of link-boxes */
+.project-list{
+    width: 100%;
+    overflow: visible;
+    margin: left;
+}
+
+/* Left Half of the List */
+.project-list-left{
+    float: left;
+    width: 50%;
+}
+
+/* Right Half of the List */
+.project-list-right{
+    float: right;
+    width: 50%;
+}
+
+
+/* Media Queries */
+
+/* For Screen sizes 980px and below */
+@media screen and (max-width:980px){
+    .main-content-area{
+        width: 80%;
+        padding-bottom: 10%;
+    }
+
+    #main-pic{
+        width: 90%;
+        height: auto;
+    }
+
+    p{
+        width: 90%;
+    }
+
+    .total-nav{
+        width:80%;
+    }
+
+    form input{
+        width: 95%;
+    }
+
+    .project-list-left{
+        float: none;
+    }
+
+    .project-list-right{
+        float: none;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    html{
+        orientation: landscape;
+    }
+
+    #Links{
+        font-size: 25pt;
+    }
+
+}
+
+/* For Screen sizes 768px and below */
+
+@media screen and (max-width:768px){
+    .project-list-left{
+        float: left;
+    }
+
+    .project-list-right{
+        float: right;
+    }
+    
+    .connect-box{
+        float: none;
+        width: 95%;
+        padding-left: 2.5%;
+    }
+
+    .main-box{
+        float: none;
+        width: 100%;
+        min-height: 500px;
+    }
+
+    #port-connect-box{
+        padding-top: 2.5%;
+
+    }
+}
+
+/* For Screen sizes 640px and below */
+@media screen and (max-width:640px){
+    .total-nav{
+        margin: 0;
+        position: static;
+        padding: 0;
+        width: 100%;
+    }
+
+    #name{
+        width:100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    #links{
+        width: 100%;
+        text-align: center;
+        background: white;
+        border-bottom: lightgray solid medium;
+    }
+
+    #links li{
+        margin: 0% 2.5% 0% 2.5%;
+
+    }
+
+    h2{
+        font-size: 25pt;
+    }
+
+    .project-list-left{
+        float: none;
+    }
+
+    .project-list-right{
+        float: none;
+    }
+
+    .main-content-area{
+        padding-bottom: 22%;
+        margin: auto;
+        margin-top: 15%;
+    }
+
+}
