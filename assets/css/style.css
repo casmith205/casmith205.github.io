@@ -269,6 +269,10 @@ footer{
         width: 95%;
     }
 
+    .link-box{
+        padding-left: 50px;
+        margin-left: 50px;
+    }
     .project-list-left{
         float: none;
         margin-left: 20px;
@@ -277,6 +281,7 @@ footer{
     .project-list-right{
         float: none;
         margin-left:20px;
+        padding: 20px;
     }
 
     body{
