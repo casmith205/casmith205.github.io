@@ -276,6 +276,7 @@ footer{
     .project-list-left{
         float: none;
         margin-left: 20px;
+        padding: 20px;
     }
 
     .project-list-right{
