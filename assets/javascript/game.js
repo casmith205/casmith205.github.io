@@ -65,6 +65,8 @@
     // Creates an array for the computer choices - array of different words
     computerChoices = ["brockhampton", "drake", "lilxan","lilyachty","amine", "migos","dram","russ","future","kendrick","kanye"];
 
+    // Array of win messages
+    messages = ["You killed it", "You go Glen Coco", "Congrats!", "Ayyyyyyyy!"];
     // Cretes an array for the user vailable options (entire alphabet - lowercase)
     userChoices = [];
     for (i=97;i<=122;i++){
@@ -73,6 +75,9 @@
 
     // Get computer's word
     var computerWord = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+    // Get a random win message
+    var winMessage = messages[Math.floor(Math.random()*messages.length)];
 
     // Turn computer's word into characters
     var computerChar = computerWord.split("");
@@ -120,7 +125,7 @@ document.onkeyup = function (event) {
             losses++;
             alert("Sorry, the correct answer was " +computerWord+ "!");
             reset ();
-            start(computerChar, correctLaetters);
+            start(computerChar, correctLetters);
         };
         
         // Calling the comparison function to create a new T/F array
@@ -132,10 +137,10 @@ document.onkeyup = function (event) {
 
         }else{
             wins++;
-            alert("You got it! The answer was " +computerWord+ ". You go Glen Coco.");
+            alert("You got it! The answer was " +computerWord+ ". " +winMessage);
             reset ();
             start(computerChar, correctLetters); 
-        }
+        };
 
         
     // If the user does not enter a letter, alert them. 
