@@ -1,76 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>
-            CSmith Portfolio
-        </title>
-        <link  href="assets/css/reset.css" type="text/css" rel="stylesheet">
-        <link  href="assets/css/style.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-        <header>
-            <div class="total-nav">
-                <h1 id="name">Carolyn Smith</h1>
-                    <ul id="links">
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="#"> | </a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#"> | </a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-            </div>
-        </header>
-    <hr>
-        <div class="main-content-area">
-            <div class="main-box">
-                <h2>About Me<hr></h2>
-                    <img id="main-pic" src="assets/images/main.jpg">
-                    <p>Welcome! You've reached the portfolio website for Carolyn Smith (that's me!). If you were looking 
-                        for examples of my work, you're at the right place! If you have found this page by accident, 
-                        stay a while and check it out. I am a software development student working my way through a 
-                        12 week boot camp program at the University of Minnesota. 
-                    </p> 
-                    <p>My background is a little different than most Software Developers. I graduated in 2015 from <i>The</i> Ohio 
-                        State University with a Bachelor's degree in Accounting. Like many accountants fresh out of college,
-                        I started my career as an auditor at a Big Four firm. After learning the ropes of the business world, 
-                        I moved into a new role as Senior Financial Analyst as a local start-up, Bite Squad. 
-                    </p>
-                    <p>As time went on, I realized that it wasn't where I was working, but rather the work that was lacking. There 
-                        were certain aspects of finance, and more specifically, start-up culture, that I loved. I enjoyed solving 
-                        issues and creating spreadsheets that simplified other people's day-to-day activities. I wanted to be
-                        involved in all areas of the business. After working directly with the developers at Bite Squad, I 
-                        noticed a gap in their knowledge and the business world knowledge. It didn't take long for me to get 
-                        into coding as a hobby, and I soon realized that I could combine my skills into a career that I love.
-                    </p>
-                    <p>What you will see within this website is a culmination of the skills I have acquired over the course
-                    of the full-stack program.If you have any questions about what you have seen on this website, please
-                    see our <a href="contact.html"><b>contact</b></a> page to submit your inquiry!
-                    </p>
-            </div>
-            <div class="connect-box">
-                <h4>Connect with Me</h4>
-                <hr>
-                <!-- Github link -->
-                <a href="https://github.com/casmith205" target="_blank">
-                    <img id="social-logo" src="assets\images\github-img.png">
-                </a>
-                <!-- LinkedIn link -->
-                <a href="https://www.linkedin.com/in/carolyn-smith-cpa-inactive-04919a99/" target="_blank">
-                    <img id="social-logo" src="assets\images\linkedin-logo.png">
-                </a>
-                <!-- Stackoverflow link -->
-                <a href="https://stackoverflow.com/users/9217305/carolyn-smith" target="_blank">
-                    <img id="social-logo" src="assets\images\stackoverflow-icon.png">
-                </a>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hip-Hop Hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link  href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <script src="assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="display-3">Hip-Hop Hangman</div> <hr>
+    <br>
+
+    <div class="row">
+
+        <div class="col-md-3">
+            <img class="sidebarImg" src="assets/images/kanye.jpg">
+            <br>
+            <img class="sidebarImg" src="assets/images/amine.jpg">
+            <br>
+            <img class="sidebarImg" src="assets/images/russ.jpg">
+            <br>
+        </div>
+        <div class="col-md-6">
+            <div class="h5">The classic game of Hangman, with a lil' more ebb and flow.</div>
+            <br>
+            <div class="instr">Press any key to begin guessing! </div>
+
+            <br>
+            <div class="metrics">
+                <p>Wins: <span id="wins"> </span></p>
+                <p>Losses: <span id="losses"> </span></p>
+                <p>Current word: <span id="current"> </span></p>
+                <p>Guesses Left: <span id="remainingGuesses">10</span></p>
+                <p>Your incorrect guesses so far: <span id="guessedLetters"> </span></p>
             </div>
         </div>
-        <footer>
-                <div class="copyright">Copyright &copy;</div>
-                <div class="bars"></div>
-        </footer>
-    </body>
+        <div class="col-md-3">
+            <img class="sidebarImg" src="assets/images/drake.jpg">
+            <br>
+            <img class="sidebarImg" src="assets/images/lilxan.png">
+            <br>
+            <img class="sidebarImg" src="assets/images/migos.jpg">
+            <br>
+        </div>
+
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
+</body>
 </html>
-    
-    
-    
