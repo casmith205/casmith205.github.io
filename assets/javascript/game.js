@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    // DEFINING VARIABLES
+// DEFINING VARIABLES
 var playerChoseChar = false;
 var characterChosen;
 var defenderExists = false;
@@ -158,13 +158,10 @@ function gameReset () {
         $(characters[i].buttonId).fadeIn();
         $(characters[i].healthId).html(characters[i].healthPoints);
         $(characters[i].buttonId).css("background-color", "#F5F5F5");
+        $(characters[i].buttonId).css("color", "black");
     };
     $(".buttons").appendTo(".characters");
     $(".defender").html(" ");
 };
 
 });
-
-
-
-
