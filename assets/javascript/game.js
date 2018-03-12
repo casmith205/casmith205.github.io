@@ -14,8 +14,9 @@ var winSound = new Audio ("assets/sounds/win.mp3");
 var jonSnow = { 
     name: "Jon Snow",
     healthPoints: 100,
-    attackPower: 35,
-    counterAttackPower: 20,
+    attackPower: 15,
+    attackIncrease: 15,
+    counterAttackPower: 30,
     imgUrl: "assets/images/jonSnow.jpg",
     healthId : "#jonHealth",
     buttonId : "#jonSnow-button"
@@ -25,8 +26,9 @@ var jonSnow = {
 var nightKing = {
     name: "The Night King",
     healthPoints: 110,
-    attackPower: 50,
-    counterAttackPower:30,
+    attackPower: 20,
+    attackIncrease: 20,
+    counterAttackPower: 10,
     imgUrl: "assets/images/nightKing.jpg",
     healthId : "#nightKingHealth",
     buttonId : "#nightKing-button",
@@ -35,8 +37,9 @@ var nightKing = {
 var hound = {
     name: "The Hound",
     healthPoints: 90,
-    attackPower: 20,
-    counterAttackPower: 5,
+    attackPower: 10,
+    attackIncrease: 5,
+    counterAttackPower: 25,
     imgUrl: "assets/images/hound.jpg",
     healthId : "#houndHealth",
     buttonId : "#hound-button"
@@ -46,8 +49,9 @@ var hound = {
 var cersei = {
     name: "Cersei Lannister",
     healthPoints: 80,
-    attackPower: 15,
-    counterAttackPower: 15,
+    attackPower: 5,
+    attackIncrease: 5,
+    counterAttackPower: 35,
     imgUrl: "assets/images/cersei.jpg",
     healthId : "#cerseiHealth",
     buttonId : "#cersei-button"
@@ -103,6 +107,8 @@ ominousSound.play();
 $("#attack-btn").on("click", function(){
     if(!defenderExists){return;};
     attack(characterChosen, defenderChosen);
+    characterChosen.attackPower += characterChosen.attackIncrease;
+    console.log(characterChosen.attackPower);
         // If the character's health is 0, fade out the picture and relay defeat message
         if(characterChosen.healthPoints <= 0) {
             dragonSound.play();
