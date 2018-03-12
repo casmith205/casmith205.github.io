@@ -92,6 +92,7 @@ ominousSound.play();
             if(clickedDefender == characters[i].buttonId){
                 $(characters[i].buttonId).appendTo(".defender");
                 $(characters[i].buttonId).css("background-color", "black");
+                $(characters[i].buttonId).css("color", "#F5F5F5");
                 defenderChosen = characters[i];
                 defenderExists = true;
             };
