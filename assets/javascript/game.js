@@ -101,14 +101,13 @@ ominousSound.play();
 
 // What to do when the attack button is clicked
 $("#attack-btn").on("click", function(){
+    if(!defenderExists){return;};
     attack(characterChosen, defenderChosen);
-    if(enemyCount >= 0){
         // If the character's health is 0, fade out the picture and relay defeat message
         if(characterChosen.healthPoints <= 0) {
             dragonSound.play();
             $(characterChosen.buttonId).fadeOut();
             $(".attackMessages").html("You were defeated by " + defenderChosen.name + ". Reset the game to play again");
-            messageReset(); 
         }
 
        else if (defenderChosen.healthPoints <= 0) {
@@ -116,15 +115,14 @@ $("#attack-btn").on("click", function(){
             defenderExists = false;
             enemyCount --;
             $(defenderChosen.buttonId).fadeOut();
-            $(".attackMessages").html("You defeated " + defenderChosen.name + ". Please choose another defender!");   
-            messageReset();  
-        }
-        
-    } else {
-        $(".defender").text("You defeated all of your enemies! Reset the game to play again");
-        winSound.play();
-    };
-
+             
+            if(enemyCount>0){
+            $(".attackMessages").html("You defeated " + defenderChosen.name + ". Please choose another defender!");
+            } else {
+                $(".attackMessages").text("You defeated all of your enemies! Reset the game to play again");
+                winSound.play();
+            }
+        };
 });
 
 // What to do when the reset button is clicked 
@@ -144,12 +142,6 @@ function attack (characterChosen, defenderChosen) {
     " But, you were hit with a counter attack! You lost " + defenderChosen.counterAttackPower + " health points.");
     
 };
-
-// Resetting attack/defend messages 
-function messageReset (){
-    $(".charAttack").html(" ");
-    $(".charDefend").html(" ");
-}
 
 // Resetting the entire game
 function gameReset () {
