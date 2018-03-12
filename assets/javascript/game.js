@@ -90,7 +90,6 @@ ominousSound.play();
         for(i=0; i<characters.length; i++) {
             // If the clicked character equals the current ID, appedn to defender, define defenderChosen, and change defenderExists to true
             if(clickedDefender == characters[i].buttonId){
-                $(".defender").html(" ");
                 $(characters[i].buttonId).appendTo(".defender");
                 $(characters[i].buttonId).css("background-color", "black");
                 defenderChosen = characters[i];
