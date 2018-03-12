@@ -1,0 +1,41 @@
+body{
+    margin: 20px;
+    background-image: url(../images/dragon.jpg);
+    font-weight: bolder;
+}
+
+img{
+    width: 200px;
+    height: 100px;
+}
+
+.buttons{
+    display: inline-block;
+    background: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    margin : 10px;
+    border:solid thick grey;
+    width: 250px;
+    height: 175px;
+}
+
+
+.enemies{
+    text-align: center;
+    display: flex;
+}
+
+#enemytitle{
+    text-align: left;
+    width: 200px;
+}
+
+.defender{
+    text-align: center;
+    display: flex;
+}
+
+.attackMessages{
+    color: black;
+}
