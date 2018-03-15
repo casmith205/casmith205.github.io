@@ -1,42 +1,58 @@
+#nextBtn{
+    display: none;
+    margin: 0px 200px 0px 200px;
+    background-color: #666666;
+}
+
+#resetBtn{
+    display:none;
+    margin: 0px 200px 0px 200px;
+    background-color: #666666;
+}
+
 body{
-    margin: 20px;
-    background: #F5F5F5 url(../images/ice.jpg) no-repeat right top;
-    font-weight: bolder;
+    background: #F5F5F5 url(../images/stadium1.jpg) no-repeat;
+    background-size: 100%;
+    padding: 20px;
+    text-align: center;
 }
 
-img{
-    width: 200px;
-    height: 100px;
-
+#startBtn{
+    margin: 0px 200px 0px 200px;
+    background-color: #bb0000;
 }
 
-.buttons{
-    display: inline-block;
+.time{
+    margin: 0px 200px 0px 200px;
+    padding: 20px;
+    background: #666666;
+    color:  black;
+    border: black thick solid;
+    display: none;
+}
+
+.gameplay{
+    margin: 0px 200px 0px 200px;
+    padding: 20px;
+    display: none;
     background: whitesmoke;
-    text-align: center;
-    padding: 10px;
-    margin : 10px;
-    border:solid thick grey;
-    width: 250px;
-    height: 175px;
+    border: black thick solid;
 }
 
-
-.enemies{
-    text-align: center;
-    display: flex;
+.results{
+    margin: 0px 200px 0px 200px;
+    padding: 20px;
+    display: none;
+    background: whitesmoke;
+    border: black thick solid;
 }
 
-#enemytitle{
-    text-align: left;
-    width: 200px;
+.jumbotron{
+    opacity: .7;
 }
 
-.defender{
-    text-align: center;
-    display: flex;
+#images{
+    display: none;
+    width: 300px;
 }
 
-.attackMessages{
-    color: black;
-}
