@@ -1,58 +1,76 @@
-#nextBtn{
-    display: none;
-    margin: 0px 20px 0px 20px;
-    background-color: #666666;
-}
-
-#resetBtn{
-    display:none;
-    margin: 0px 20px 0px 20px;
-    background-color: #666666;
-}
-
-body{
-    background: #F5F5F5 url(../images/stadium1.jpg) no-repeat;
-    background-size: 100%;
-    padding: 20px;
-    text-align: center;
-}
-
-#startBtn{
-    margin: 0px 20px 0px 20px;
-    background-color: #bb0000;
-}
-
-.time{
-    margin: 0px 20px 0px 20px;
-    padding: 20px;
-    background: #666666;
-    color:  black;
-    border: black thick solid;
-    display: none;
-}
-
-.gameplay{
-    margin: 0px 20px 0px 20px;
-    padding: 20px;
-    display: none;
-    background: whitesmoke;
-    border: black thick solid;
-}
-
-.results{
-    margin: 0px 20px 0px 20px;
-    padding: 20px;
-    display: none;
-    background: whitesmoke;
-    border: black thick solid;
-}
-
 .jumbotron{
-    opacity: .7;
+    opacity: .5;
+    color:#4CAF50;
+}
+body{
+    background-image: url("../images/black_mamba.png")
 }
 
-#images{
-    display: none;
+.buttons{
+    margin: 10px 20px 10px 20px;
+}
+
+.animal{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+
+.gif{
+    margin: 20px;
+    border: solid medium black;
+    width: 90%;
+}
+
+p{
+    color: white;
+    margin: 0px 0px 20px 20px;
+    padding: 0px 0px 0px 5px;
+    width:30%;
+    display: inline-block;
+    
+}
+
+form{
+    color: black;
+    font-weight: bolder;
+    background-color: #4CAF50;
+    width: 75%;
+    padding: 20px;
+    border: solid thick black;
+    margin: 20px;
+}
+
+.animalDiv{
     width: 300px;
+    display: inline-block;
 }
 
+.fav{
+    width: 45%; 
+    display: inline-block;
+    background-color: white;
+    border: none;
+    color: #4CAF50;
+    padding: 5px 2px 5px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bolder;
+    margin: 4px 2px;
+    border-radius: 8px;
+}
+
+.favorites{
+    color: white;
+    margin: 20px;
+}
