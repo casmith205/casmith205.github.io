@@ -1,76 +1,47 @@
-.jumbotron{
-    opacity: .5;
-    color:#4CAF50;
-}
-body{
-    background-image: url("../images/black_mamba.png")
-}
-
-.buttons{
-    margin: 10px 20px 10px 20px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: #777;
+    padding: 20px;
+    background: url("../images/tex2res5.png");
 }
 
-.animal{
-    background-color: #4CAF50;
-    border: none;
+#mainContainer {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+}
+.jumbotron {
+    background: url("../images/mtn.jpg") no-repeat bottom;
     color: white;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bolder;
-    margin: 4px 2px;
-    border-radius: 8px;
 }
 
-.gif{
-    margin: 20px;
-    border: solid medium black;
-    width: 90%;
+#scheduleDiv {
+    text-align: center;
+    width: 100%;
+    float: center;
+    color: black;   
+}
+#card1Header {
+    background: dimgray; 
+    color: white;
+    text-align: left;
+}
+#card2Header {
+    background:dimgrey; 
+    color: white;
+    text-align: left;
+}
+#formDiv {
+    text-align: left;
+}
+.form-group {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 p{
-    color: white;
-    margin: 0px 0px 20px 20px;
-    padding: 0px 0px 0px 5px;
-    width:30%;
-    display: inline-block;
-    
-}
-
-form{
-    color: black;
-    font-weight: bolder;
-    background-color: #4CAF50;
-    width: 75%;
-    padding: 20px;
-    border: solid thick black;
-    margin: 20px;
-}
-
-.animalDiv{
-    width: 300px;
-    display: inline-block;
-}
-
-.fav{
-    width: 45%; 
-    display: inline-block;
-    background-color: white;
-    border: none;
-    color: #4CAF50;
-    padding: 5px 2px 5px 2px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 12px;
-    font-weight: bolder;
-    margin: 4px 2px;
-    border-radius: 8px;
-}
-
-.favorites{
-    color: white;
-    margin: 20px;
+    font-weight: bold;
 }

@@ -3,49 +3,108 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Giphy API</title>
+    <title>Train Tracker</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- CSS File -->
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
-    <!-- JS file -->
-    <script src="assets/javascript/giphy.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <!-- Moment.js Reference -->
+    <script src="http://momentjs.com/downloads/moment.js"></script>  
 </head>
 <body>
-    <div class = "jumbotron">
-        <div class = "display-3">Animal GIFs</div>
-    </div>
-    <div class = "row">
-        <div class = "buttons">
-        </div>
-    </div>
-
-    <div class = "row">
-        <div class = "col-md-8">
-            <div class="gifs">
+    
+        <div id="mainContainer"></div>
+        <!-- Header -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-4">Train Schedule</h1>
+                        <p>Need to keep track of all your trains? Enter them here!</p>
+                    </div>
+                </div>
+            
             </div>
         </div>
-        <div class = "col-md-4">
-            <div class = "search">
-                    <form id="search-form">
-                        <label for="search-input">Find an animal</label><br>
-                        <input type="text" id="search-input"><br><br>
+        <br>
+    <!-- CARD 1 -->
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="card" id="scheduleDiv">
+                       
+                    <div class="card-header" id="card1Header">
+                      Current Employees
+                    </div>
+                 
+                    <div class="card-body" id="tableDiv">
+                            <table class="table" id="trainTable">
+                                    <thead>
+                                      <tr>
+                                        <th scope="col">Train Name</th>
+                                        <th scope="col">Destination</th>
+                                        <th scope="col">Frequency (min)</th>
+                                        <th scope="col">Next Arrival</th>
+                                        <th scope="col">Minutes Away</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                  </table>
+                    </div>
+                
+                </div>
+            </div>
+        
+        </div>
+        <br>
+    <!-- CARD 2 -->
+        <div class="row">
+            <div class="col-md-12">
+                        
+                <div class="card" id="formDiv">
+    
+                    <div class="card-header" id="card2Header">
+                      Add Employees
+                    </div>
+                    <form>
+                        <br>
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">Train Name</label>
+                          <input type="text" class="form-control" id="trainInput">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect1">Destination</label>
+                          <input type="text" class="form-control" id="destInput">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlSelect2">First Train Time (HH:mm Military time)</label>
+                          <input type="text" class="form-control" id="firstTimeInput">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Frequency</label>
+                          <input type="text" class="form-control" id="freqInput">
+                        </div>
+                        <div class="form-group">
+                        <button type="submit" class="btn btn-primary" id="addTrain">Submit</button>
+                        </div>
+                      </form>
+                    <div class="card-body">
                     
-                        <!-- Button triggers new search to be added -->
-                        <input id="add-animal" type="submit" value="Submit">
-                    </form>
+                    </div>
+                
+                </div>
+               
             </div>
-            <div class = "favorites">
-                <div class="h4">Favorite Gifs</div>
-            </div>
+            
         </div>
     </div>
-
-<!-- JQuery -->
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  
+   <!-- Firebase Reference -->
+   <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
+   <script src="assets/javascript/app.js"></script>
+<!-- BOOTSTRAP LINKS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
