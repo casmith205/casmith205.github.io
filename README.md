@@ -10,3 +10,4 @@ Currently open to full-time positions in Minneapolis, MN or any major metro area
 https://casmith205.github.io/
 
 ## License 
+MIT License
