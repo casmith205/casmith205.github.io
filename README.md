@@ -9,5 +9,8 @@ Currently open to full-time positions in Minneapolis, MN or any major metro area
 ## Live Link
 https://casmith205.github.io/
 
+## Technologies Used
+HTML, CSS, Bootstrap, JavaScript
+
 ## License 
 MIT License
